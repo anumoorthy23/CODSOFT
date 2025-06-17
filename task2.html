@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M ANUSHIYA - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #222; }
+        header { background: #2d3e50; color: #fff; padding: 30px 0 20px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+        header p { margin: 10px 0 0 0; font-size: 1.2em; color: #b0c4de; }
+        nav { margin-top: 15px; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+
+        section { max-width: 900px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+        section h2 { color: #2d3e50; margin-top: 0; }
+
+        .about-container { display: flex; align-items: center; gap: 30px; flex-wrap: wrap; }
+        .about-container img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #2d3e50; }
+        .about-bio { flex: 1; }
+
+        .skills-list { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0 0 0; }
+        .skills-list span { background: #e0e7ef; color: #2d3e50; padding: 8px 18px; border-radius: 20px; font-size: 1em; }
+
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
+        .project-card { background: #f4f8fb; border-radius: 8px; padding: 18px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+        .project-card img { width: 100%; height: 140px; object-fit: cover; border-radius: 6px; }
+        .project-card h3 { margin: 12px 0 6px 0; }
+        .project-card p { margin: 0; font-size: 0.98em; }
+
+        .resume-link { display: inline-block; margin-top: 15px; padding: 10px 22px; background: #2d3e50; color: #fff; border-radius: 25px; text-decoration: none; font-weight: bold; transition: background 0.2s; }
+        .resume-link:hover { background: #1b2532; }
+
+        .contact-info { margin-top: 10px; }
+        .contact-info p { margin: 8px 0; font-size: 1.05em; }
+
+        footer { background: #2d3e50; color: #b0c4de; text-align: center; padding: 18px 0; margin-top: 40px; font-size: 1em; border-radius: 0 0 10px 10px; }
+        @media (max-width: 700px) {
+            section { padding: 18px; }
+            .about-container { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>M ANUSHIYA</h1>
+        <p>Web Developer | Designer | Learner</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="https://via.placeholder.com/150" alt="Anushiya's Photo">
+            <div class="about-bio">
+                <p>
+                    Hello! I'm Anushiya, a passionate web developer with a keen interest in building responsive and user-friendly websites. I enjoy turning complex problems into simple, beautiful, and intuitive designs. With experience in HTML, CSS, JavaScript, and modern frameworks, I am always eager to learn new technologies and take on new challenges.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Bootstrap</span>
+            <span>Git & GitHub</span>
+            <span>Responsive Design</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x140?text=Project+1" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website to showcase my skills, projects, and resume. Built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x140?text=Project+2" alt="Project 2">
+                <h3>Weather App</h3>
+                <p>A responsive weather application that fetches real-time weather data using a public API and displays it in a user-friendly interface.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x140?text=Project+3" alt="Project 3">
+                <h3>Task Manager</h3>
+                <p>A simple task manager web app to organize daily tasks, featuring add, edit, and delete functionalities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can download my resume here:</p>
+        <a class="resume-link" href="resume.pdf" download>Download Resume (PDF)</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:anushiya@email.com">anushiya@email.com</a></p>
+            <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 M ANUSHIYA. All rights reserved.
+    </footer>
+</body>
+</html>
